@@ -1,0 +1,263 @@
+$font: #26283b;
+$background: #f2eeea;
+$grey: #828282;
+$iconBackground: #e6ded7;
+
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  padding-top: 27.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    border-radius: 4px;
+  }
+}
+
+.projectContainer {
+  div,
+  span {
+    line-height: 180%;
+  }
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  .project {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    gap: 1rem;
+    .projectTitle,
+    .projectIntro {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .subLabel {
+    font-size: 1rem;
+    color: $grey;
+    margin-bottom: 0.2rem;
+    font-weight: 300;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  .subTitle {
+    font-weight: 500;
+  }
+  .number {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 4.6rem;
+  }
+  .projectImg {
+    width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 1440px;
+    }
+    .inline {
+      margin-left: -20px;
+    }
+  }
+}
+.container {
+  height: 900px;
+  background-color: grey;
+  .sticky {
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid blue;
+    background-color: #333;
+    color: #fff;
+  }
+}
+.projectContent {
+  padding: 60px;
+
+  .projectHighlight {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    & > div {
+      flex: 1 1 240px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .section {
+    margin-top: 200px;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+    & > div {
+      flex: 1 1 400px;
+    }
+    .title {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      font-size: 3rem;
+      font-weight: 800;
+      height: fit-content;
+    }
+    .description {
+      max-width: 600px;
+    }
+    .subSection {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 4rem;
+
+      .subTitle {
+        font-weight: 800;
+        font-size: 1.6rem;
+        line-height: 160%;
+        margin-bottom: 1rem;
+      }
+      .subTitleSmall {
+        font-weight: 800;
+        font-size: 1rem;
+        line-height: 160%;
+        margin-bottom: 0.4rem;
+      }
+      .subDescription {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.line {
+  margin: 60px 0;
+  border-top: 2px solid $font;
+  opacity: 0.1;
+}
+
+.navigateButton {
+  margin: 100px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .arrow {
+    border: solid $font;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    margin-top: 2px;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .arrowLine {
+    top: 36px;
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background-color: $font;
+    z-index: 99;
+    transition: all 0.4s ease;
+  }
+  .arrowText {
+    padding-left: 10px;
+    transition: all 0.4s ease;
+    color: $font;
+  }
+
+  .buttonItem {
+    position: relative;
+    padding: 20px 0px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: all 0.4s ease;
+    &:hover {
+      & .arrowLine {
+        width: 100px;
+      }
+      & .arrowText {
+        transition: all 0.4s ease;
+      }
+    }
+  }
+
+  & .previous {
+    &.arrow {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+    & .arrowLine {
+      left: 0px;
+    }
+    &:hover {
+      & .arrowText {
+        padding-left: 120px;
+      }
+    }
+  }
+  & .next {
+    & .arrow {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    & .arrowLine {
+      right: 0px;
+    }
+    & .arrowText {
+      padding-right: 10px;
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      & .arrowText {
+        padding-right: 120px;
+      }
+    }
+  }
+}
+.right {
+  justify-content: flex-end;
+}
+@media (max-width: 1119px) {
+  .projectContentContainer {
+    margin: 160px auto 0px;
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 800px) {
+  .projectContent {
+    .sectionContentContainer {
+      flex-direction: column;
+
+      .sectionContentItem {
+        width: 100%;
+      }
+    }
+  }
+}
