@@ -1,12 +1,14 @@
 import './App.css'
+import React from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './components/home/Home'
-import About from './components/about/About'
 import NoPage from './components/noPage/NoPage'
-import StudentApps from './components/projects/studentApps/StudentApps'
+import StudentPortal from './components/projects/StudentPortal'
 import { AnimatePresence } from 'framer-motion'
-import CourseMapper from './components/projects/courseMapper/CourseMapper'
+import CourseMapper from './components/projects/CourseMapper'
+import Peerview from './components/projects/Peerview'
+import Library from './components/projects/Library'
 function App() {
   const location = useLocation()
 
@@ -15,8 +17,10 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/monash-student-apps" element={<StudentApps />} />
+          <Route path="/monash-student-portal" element={<StudentPortal />} />
           <Route path="/monash-course-mapper" element={<CourseMapper />} />
+          <Route path="/monash-peerview" element={<Peerview />} />
+          <Route path="/monash-react-component-library" element={<Library />} />
 
           <Route path="*" element={<NoPage />} />
         </Route>

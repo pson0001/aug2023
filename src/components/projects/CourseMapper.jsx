@@ -1,15 +1,24 @@
-import React from 'react'
-import c from './course-mapper.module.scss'
-import mapper from '../../assets/course-mapper-browser.png'
-import coreBefore from '../../assets/core-concepts-before.png'
-import coreAfter from '../../assets/core-concepts-after.png'
-import mapBefore from '../../assets/map-before.png'
-import mapAfter from '../../assets/map-after.png'
+import React, { useEffect } from 'react'
+import c from './project.module.scss'
+import mapper from '../assets/course-mapper-browser.png'
+import coreBefore from '../assets/core-concepts-before.png'
+import coreAfter from '../assets/core-concepts-after.png'
+import mapBefore from '../assets/map-before.png'
+import mapAfter from '../assets/map-after.png'
+import detailOne from '../assets/detail-one.png'
+import detailTwo from '../assets/detail-two.png'
 
-import transition from '../../layout/transition'
-import { Link } from 'react-router-dom'
+import transition from '../layout/transition'
+import Footer from '../utils/Footer'
 
 const CourseMapper = () => {
+  useEffect(() => {
+    let timer1 = setTimeout(() => window.scrollTo(0, 0), 0)
+
+    return () => {
+      clearTimeout(timer1)
+    }
+  }, [])
   return (
     <>
       <div className={c.projectContainer}>
@@ -61,7 +70,7 @@ const CourseMapper = () => {
               </div>
               <div>
                 <span className={c.subLabel}>REDUCE HANDLING TIMES</span>
-                <span className={c.number}>{'20+ -> 5'}</span>
+                <span className={c.number}>{'20 -> 5'}</span>
                 <span>minutes</span>
               </div>
             </div>
@@ -102,7 +111,7 @@ const CourseMapper = () => {
             </div>
           </div>
           <div className={c.section}>
-            <div className={c.title}>My ROLE</div>
+            <div className={c.title}>MY ROLE</div>
             <div className={c.subSection}>
               <div className={c.description}>
                 I had the privilege of leading the design of the course advice
@@ -110,7 +119,7 @@ const CourseMapper = () => {
                 designers, as well as actively contributing to the front-end
                 development. Together, we crafted an innovative and user-centric
                 course advice system that enhances the academic journey for
-                students.
+                staff and students.
               </div>
             </div>
           </div>
@@ -194,24 +203,80 @@ const CourseMapper = () => {
             </div>
           </div>
           <div className={c.section}>
+            <div className={c.title}>THE SMALL THINGS</div>
+            <div className={c.subSection}>
+              <div>
+                <div className={c.subTitle}>Recognising needs and emotions</div>
+                <div className={c.subDescription}>
+                  Understanding the critical role advisors play in guiding
+                  students, we prioritize validation and double-checking
+                  mechanisms to instill confidence and ensure accurate
+                  recommendations.
+                </div>
+
+                <div className={c.subDescription}>
+                  This includes displaying essential student information, such
+                  as names and IDs, for quick reference and easy access.
+                  Moreover, we provide a seamless way for advisors to switch
+                  between students they are advising.
+                </div>
+                <div className={c.subDescription}>
+                  Furthermore, we enhance clarity by indicating unit counts for
+                  specific majors.
+                </div>
+                <div className={c.projectImg}>
+                  <img src={detailOne} alt="mapper" className={c.inline} />
+                </div>
+                <div className={c.subTitle}>Enhance information context</div>
+                <div className={c.subDescription}>
+                  By streamlining processes and presenting data in a meaningful
+                  context, we enable advisors to work more efficiently and make
+                  well-informed decisions. This approach not only saves time but
+                  also elevates the advising experience, ultimately empowering
+                  advisors to provide comprehensive and valuable support to
+                  students.
+                </div>
+
+                <div className={c.projectImg}>
+                  <img src={detailTwo} alt="mapper" className={c.inline} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={c.section}>
             <div className={c.title}>BRING IT ALL TOGETHER</div>
-            <div className={c.videoContainer}>
-              <iframe
-                className={c.iframe}
-                title="course mapper"
-                src="https://drive.google.com/file/d/1aVB5vu2ieN7mtR_kJ8SRz_UQRakUzDuI/preview"
-              ></iframe>
+            <div className={c.subSection}>
+              <div className={c.videoContainer}>
+                <iframe
+                  className={c.iframe}
+                  title="course mapper"
+                  src="https://drive.google.com/file/d/1aVB5vu2ieN7mtR_kJ8SRz_UQRakUzDuI/preview"
+                ></iframe>
+
+                {/* <video className={c.iframe} controls>
+                  <source
+                    src="https://drive.google.com/file/d/1aVB5vu2ieN7mtR_kJ8SRz_UQRakUzDuI/view?usp=sharing"
+                    type="video/mp4"
+                  />
+                </video> */}
+              </div>
+
+              <div className={c.subDescription}>
+                Taking user feedback to heart, we have iteratively refined and
+                released several updates since the initial launch of Course
+                Mapper. This iterative process ensures that the platform
+                consistently evolves to meet the needs and expectations of its
+                users, delivering an increasingly seamless and effective
+                experience.
+              </div>
             </div>
           </div>
         </div>
-        {/* <div className={[c.navigateButton, c.right].join(' ')}>
-          <Link to="/" className={c.buttonItem}>
-            <span className={c.arrowText}>Next</span>
-            <span className={c.arrowLine}></span>
-            <span className={c.arrow}></span>
-          </Link>
-        </div> */}
       </div>
+      <Footer
+        left={{ to: '/monash-student-portal', name: 'STUDENT PORTAL' }}
+        right={{ to: '/monash-peerview', name: 'PEERVIEW' }}
+      />
     </>
   )
 }

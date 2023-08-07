@@ -1,0 +1,93 @@
+$font: #26283b;
+$background: #f2eeea;
+$grey: #828282;
+$iconBackground: #e6ded7;
+
+.navigateButton {
+  border-top: 1px solid black;
+  margin-top: 60px;
+  padding: 40px 60px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .arrow {
+    border: solid $font;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    margin-top: 2px;
+    padding: 10px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .arrowLine {
+    position: absolute;
+    top: 42px;
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: $font;
+    transition: all 0.4s ease;
+  }
+  .arrowText {
+    padding-left: 40px;
+    transition: all 0.4s ease;
+    color: $font;
+    font-size: 2rem;
+  }
+
+  .buttonItem {
+    position: relative;
+    padding: 20px 0px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: all 0.4s ease;
+    &:hover {
+      & .arrowLine {
+        width: 100px;
+      }
+      & .arrowText {
+        transition: all 0.4s ease;
+      }
+    }
+  }
+
+  & .previous {
+    &.arrow {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+    & .arrowLine {
+      left: -2px;
+    }
+    &:hover {
+      & .arrowText {
+        padding-left: 120px;
+      }
+    }
+  }
+  & .next {
+    & .arrow {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    & .arrowLine {
+      right: -2px;
+    }
+    & .arrowText {
+      padding-right: 60px;
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      & .arrowText {
+        padding-right: 120px;
+      }
+    }
+  }
+}
+.right {
+  justify-content: flex-end;
+}

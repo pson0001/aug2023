@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import c from './home.module.scss'
 import { motion } from 'framer-motion'
@@ -5,7 +6,16 @@ import landingImg from '../assets/landing.png'
 import frameImg from '../assets/frame.png'
 import peerviewImg from '../assets/peerview.png'
 import transition from '../layout/transition'
+import Footer from '../utils/Footer'
 const Home = () => {
+  useEffect(() => {
+    let timer1 = setTimeout(() => window.scrollTo(0, 0), 0)
+
+    return () => {
+      clearTimeout(timer1)
+    }
+  }, [])
+
   const container = {
     hidden: {
       y: 0,
@@ -60,7 +70,7 @@ const Home = () => {
           animate="visible"
         >
           <motion.div variants={item} className={[c.project, c.one].join(' ')}>
-            <Link to={'/monash-student-apps'}>
+            <Link to={'/monash-student-portal'}>
               <h1>STUDENT PORTAL</h1>
 
               <div className={c.label}>Monash University</div>
@@ -131,57 +141,84 @@ const Home = () => {
             </span>
             , and in my free time, I enjoy drawing pixel art and crocheting.
           </div>
+        </div>
+      </div>
+      <div className={c.about}>
+        <div className={c.aboutTitle}>
+          <h2>MY VALUES</h2>
+        </div>
+        <div className={c.aboutDetails}>
           <div>
-            If you are interested in my experience, you can pay a visit to my{' '}
-            <a
-              href="https://www.linkedin.com/in/ping-song-pson0001/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {' '}
-              Linkedin{' '}
-              <svg
-                aria-hidden="true"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="#000"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path
-                  d="M10 4H6.46154C5.8087 4 5.1826 4.25934 4.72097 4.72097C4.25934 5.1826 4 5.8087 4 6.46154V17.5385C4 18.1913 4.25934 18.8174 4.72097 19.279C5.1826 19.7407 5.8087 20 6.46154 20H17.5385C18.1913 20 18.8174 19.7407 19.279 19.279C19.7407 18.8174 20 18.1913 20 17.5385V14"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                />
-                <path
-                  d="M10 14L20 4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                />
-                <path
-                  d="m15 4h5v5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                />
-              </svg>
-            </a>{' '}
-            profile. Thank you for stopping by!
+            Recognising not only the needs but also the
+            <span className={[c.tag, c.one].join(' ')}>emotions</span>
+          </div>
+          <div>
+            Spread <span className={[c.tag, c.two].join(' ')}>kindness</span>&
+            support others
+          </div>
+          <div>
+            Dream big, make it{' '}
+            <span className={[c.tag, c.three].join(' ')}>happen</span>, or get
+            close to sometimes <span style={{ fontSize: '2rem' }}>🤷‍♀️</span>
+          </div>
+          <div>
+            Always <span className={[c.tag, c.four].join(' ')}>iterate</span>{' '}
+            <span style={{ textDecoration: 'line-through' }}>
+              (I hate my old designs)
+            </span>
           </div>
         </div>
       </div>
-
-      <div className={c.viewProject}>
-        <Link to={'/monash-student-apps'}>
-          <h2>VIEW PROJECT - STUDENT PORTAL</h2>
-          <div className={c.arrow}></div>
-        </Link>
+      <div className={c.about}>
+        <div>
+          If you are interested in my experience, you can pay a visit to my{' '}
+          <a
+            href="https://www.linkedin.com/in/ping-song-pson0001/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {' '}
+            Linkedin{' '}
+            <svg
+              aria-hidden="true"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="#000"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path
+                d="M10 4H6.46154C5.8087 4 5.1826 4.25934 4.72097 4.72097C4.25934 5.1826 4 5.8087 4 6.46154V17.5385C4 18.1913 4.25934 18.8174 4.72097 19.279C5.1826 19.7407 5.8087 20 6.46154 20H17.5385C18.1913 20 18.8174 19.7407 19.279 19.279C19.7407 18.8174 20 18.1913 20 17.5385V14"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+              />
+              <path
+                d="M10 14L20 4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+              />
+              <path
+                d="m15 4h5v5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+              />
+            </svg>
+          </a>{' '}
+          profile. Thank you for stopping by!
+        </div>{' '}
       </div>
+      <Footer
+        right={{
+          to: '/monash-student-portal',
+          name: 'VIEW PROJECT - STUDENT PORTAL',
+        }}
+      />
     </motion.div>
   )
 }
