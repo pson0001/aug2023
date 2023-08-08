@@ -171,11 +171,13 @@ $iconBackground: #e6ded7;
     border-radius: 4px;
   }
 }
-a {
-  color: #000;
-  display: inline-block;
-  svg {
-    margin-bottom: -6px;
+.description {
+  a {
+    color: #000;
+    display: inline-block;
+    svg {
+      margin-bottom: -6px;
+    }
   }
 }
 
