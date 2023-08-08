@@ -100,34 +100,38 @@ const Peerview = () => {
                   User and stakeholder interviews
                 </div>
                 <div className={c.subDescription}>
-                  I conducted many interviews with end-users and stakeholder to
-                  understand the current review process, pain points,
-                  opportunities and their expectations about the app.
+                  As part of this project, I conducted numerous interviews with
+                  end-users and stakeholders to gain insights into the current
+                  review process, identify pain points, explore potential
+                  opportunities, and understand their expectations for the app.
                 </div>
                 <div>
                   <div className={c.subTitle}>Competitor Research</div>
                   <div className={c.subDescription}>
-                    By understanding that the users will not compare the new
-                    review app to other universities’ apps but the apps that
-                    they commonly use (eg, Netflix, Facebook). I simply treat
-                    this university exclusive app as any modern review app that
-                    can compete with any of the review apps that are accessible
-                    to the public.
+                    Recognizing that users will not compare the new review app
+                    to other universities' apps, but rather to the widely used
+                    apps like Netflix and Facebook, we have ensured that this
+                    exclusive university app stands on par with any modern
+                    review app available to the public.
                   </div>
                 </div>
                 <div>
                   <div className={c.subTitle}>User Journey Mapping</div>
                   <div className={c.subDescription}>
-                    Through interviews, I mapped out the current user journey
-                    that identified gaps and painpoints between each steps of
-                    the process.
+                    Through interviews, I carefully mapped out the current user
+                    journey, identifying gaps and pain points that exist between
+                    each step of the process. This comprehensive analysis
+                    allowed us to pinpoint areas for improvement and informed
+                    our efforts to create a more seamless and user-friendly
+                    experience.
                   </div>
                 </div>
                 <div>
                   <div className={c.subTitle}>Problem Statement</div>
                   <div className={c.subDescription}>
-                    I created a few key problem statement that guide me
-                    throughout the creation journey.
+                    By leveraging insights from the user interviews, I
+                    formulated a set of key problem statements that served as
+                    guiding principles throughout the creation journey.
                   </div>
                 </div>
               </div>
@@ -139,8 +143,8 @@ const Peerview = () => {
               <div>
                 <div className={c.subTitle}>Project sitemap</div>
                 <div className={c.subDescription}>
-                  Working on a sitemap allowed me to understand the goal(s) of
-                  every page
+                  Developing a sitemap proved invaluable as it provided a
+                  comprehensive understanding of the goals for each page
                 </div>
                 <div className={c.projectImg}>
                   <img src={sitemap} alt="sitemap" className={c.inline} />
@@ -181,15 +185,15 @@ const Peerview = () => {
           <div className={c.section}>
             <div className={c.title}>Design System</div>
             <div className={c.subSection}>
-              {' '}
               <div className={c.projectImg}>
                 <img src={dls} alt="dls" className={c.inline} />
               </div>
               <div className={c.subDescription}>
-                With the unique feature of this app, I proposed a design style
-                that may not be seen very often in a university project. I am
-                happy to say that my design direction was approved for
-                implementation.
+                With the incorporation of a unique feature in this app, I
+                proposed a design style that diverged from the conventional
+                university projects. Delightfully, my design direction received
+                approval for implementation, allowing us to create a visually
+                compelling and distinct user experience.
               </div>
             </div>
           </div>

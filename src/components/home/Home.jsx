@@ -7,6 +7,7 @@ import frameImg from '../assets/frame.png'
 import peerviewImg from '../assets/peerview.png'
 import transition from '../layout/transition'
 import Footer from '../utils/Footer'
+import Icon from '../assets/Icon'
 const Home = () => {
   useEffect(() => {
     let timer1 = setTimeout(() => window.scrollTo(0, 0), 0)
@@ -149,23 +150,25 @@ const Home = () => {
         </div>
         <div className={c.aboutDetails}>
           <div>
-            Recognising not only the needs but also the
-            <span className={[c.tag, c.one].join(' ')}>emotions</span>
+            Design with empathy, recognising needs and{' '}
+            <span className={[c.tag, c.one].join(' ')}>emotions</span> for a
+            human-centered experience.
           </div>
           <div>
-            Spread <span className={[c.tag, c.two].join(' ')}>kindness</span>&
-            support others
+            Spread <span className={[c.tag, c.two].join(' ')}>kindness</span>{' '}
+            and support others to make the world a better place.
           </div>
           <div>
-            Dream big, make it{' '}
-            <span className={[c.tag, c.three].join(' ')}>happen</span>, or get
-            close to sometimes <span style={{ fontSize: '2rem' }}>🤷‍♀️</span>
+            Dream big, make it happen, or just get a
+            <span className={[c.tag, c.three].join(' ')}>step&nbsp;closer</span>
+            sometimes <span style={{ fontSize: '2rem' }}>🤷‍♀️</span>.
           </div>
           <div>
-            Always <span className={[c.tag, c.four].join(' ')}>iterate</span>{' '}
-            <span style={{ textDecoration: 'line-through' }}>
-              (I hate my old designs)
-            </span>
+            Always <span className={[c.tag, c.four].join(' ')}>iterate</span>,{' '}
+            because designers hate their old designs.
+            {/* <span style={{ textDecoration: 'line-through' }}>
+            
+            </span> */}
           </div>
         </div>
       </div>
@@ -178,37 +181,7 @@ const Home = () => {
             rel="noreferrer"
           >
             {' '}
-            Linkedin{' '}
-            <svg
-              aria-hidden="true"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="#000"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path
-                d="M10 4H6.46154C5.8087 4 5.1826 4.25934 4.72097 4.72097C4.25934 5.1826 4 5.8087 4 6.46154V17.5385C4 18.1913 4.25934 18.8174 4.72097 19.279C5.1826 19.7407 5.8087 20 6.46154 20H17.5385C18.1913 20 18.8174 19.7407 19.279 19.279C19.7407 18.8174 20 18.1913 20 17.5385V14"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-              <path
-                d="M10 14L20 4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-              <path
-                d="m15 4h5v5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-            </svg>
+            Linkedin <Icon.External />
           </a>{' '}
           profile. Thank you for stopping by!
         </div>{' '}

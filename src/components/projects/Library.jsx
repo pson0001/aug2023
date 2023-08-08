@@ -17,18 +17,18 @@ const Peerview = () => {
         <div className={c.project}>
           <div className={c.projectTitle}>
             <span className={c.subLabel}>PROJECT NAME</span>
-            <span className={c.title}>STUDENT PORTAL</span>
+            <span className={c.title}>REACT COMPONENT LIBRARY</span>
 
             <span className={c.subLabel}>RESPONSIBILITY</span>
             <span className={c.subTitle}>
-              User research, UX/UI Design, Frontend Development, User Testing
+              UI Design, Frontend Development, Accessibility Testing
             </span>
           </div>
           <div className={c.projectIntro}>
             <span className={c.subLabel}>OVERVIEW</span>
             <span className={c.subTitle}>-</span>
           </div>
-        </div>{' '}
+        </div>
       </div>
       <Footer
         right={{

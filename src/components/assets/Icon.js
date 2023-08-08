@@ -24,6 +24,39 @@ Icon.ArrowDown = () => (
     <line x1="6" y1="13" x2="12" y2="19" />
   </svg>
 )
+
+Icon.External = () => (
+  <svg
+    aria-hidden="true"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth="1.5"
+    stroke="#000"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path
+      d="M10 4H6.46154C5.8087 4 5.1826 4.25934 4.72097 4.72097C4.25934 5.1826 4 5.8087 4 6.46154V17.5385C4 18.1913 4.25934 18.8174 4.72097 19.279C5.1826 19.7407 5.8087 20 6.46154 20H17.5385C18.1913 20 18.8174 19.7407 19.279 19.279C19.7407 18.8174 20 18.1913 20 17.5385V14"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M10 14L20 4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+    />
+    <path
+      d="m15 4h5v5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+    />
+  </svg>
+)
 Icon.ArrowRight = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

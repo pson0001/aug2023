@@ -252,13 +252,6 @@ const CourseMapper = () => {
                   title="course mapper"
                   src="https://drive.google.com/file/d/1aVB5vu2ieN7mtR_kJ8SRz_UQRakUzDuI/preview"
                 ></iframe>
-
-                {/* <video className={c.iframe} controls>
-                  <source
-                    src="https://drive.google.com/file/d/1aVB5vu2ieN7mtR_kJ8SRz_UQRakUzDuI/view?usp=sharing"
-                    type="video/mp4"
-                  />
-                </video> */}
               </div>
 
               <div className={c.subDescription}>
