@@ -34,6 +34,7 @@ $green: #65de6d;
         border-radius: 100px;
         border: 1px solid #000;
         padding: 8px 16px;
+        width: fit-content;
         content: '';
         top: 90px;
         transition: all 0.3s ease-in-out;
@@ -238,5 +239,25 @@ $green: #65de6d;
         top: -80px !important;
       }
     }
+  }
+}
+@media screen and (max-width: 600px) {
+  .project {
+    .projectImg {
+      img {
+        width: 300px !important;
+      }
+    }
+    &:hover {
+      .projectImg {
+        top: 160px !important;
+      }
+      .label {
+        top: 160px !important;
+      }
+    }
+  }
+  .photoDetails {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
