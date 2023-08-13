@@ -8,6 +8,14 @@ import peerviewImg from '../assets/peerview.png'
 import transition from '../layout/transition'
 import Footer from '../utils/Footer'
 import Icon from '../assets/Icon'
+import photoOne from '../assets/photoOne.jpg'
+import boulderTwo from '../assets/boulderTwo.jpg'
+import photoThree from '../assets/photoThree.jpg'
+import photoFour from '../assets/photoFour.jpg'
+import flower from '../assets/flower.gif'
+import yoda from '../assets/yoda.gif'
+import boulderOne from '../assets/boulderOne.jpg'
+import cat from '../assets/cat.jpg'
 const Home = () => {
   useEffect(() => {
     let timer1 = setTimeout(() => window.scrollTo(0, 0), 0)
@@ -135,13 +143,6 @@ const Home = () => {
             </span>
             from Monash University.
           </div>
-          <div>
-            I love
-            <span className={[c.tag, c.four].join(' ')}>
-              Making&nbsp;things
-            </span>
-            , and in my free time, I enjoy drawing pixel art and crocheting.
-          </div>
         </div>
       </div>
       <div className={c.about}>
@@ -166,10 +167,23 @@ const Home = () => {
           <div>
             Always <span className={[c.tag, c.four].join(' ')}>iterate</span>,{' '}
             because designers hate their old designs.
-            {/* <span style={{ textDecoration: 'line-through' }}>
-            
-            </span> */}
           </div>
+        </div>
+      </div>
+
+      <div className={c.about}>
+        <div className={c.aboutTitle}>
+          <h2>MY FREE TIME</h2>
+        </div>
+        <div className={c.photoDetails}>
+          <img className={c.photo} src={photoThree} alt="" />
+          <img className={c.photo} src={flower} alt="" />
+          <img className={c.photo} src={photoFour} alt="" />
+          <img className={c.photo} src={yoda} alt="" />
+          <img className={c.photo} src={photoOne} alt="" />
+          <img className={c.photo} src={boulderOne} alt="" />
+          <img className={c.photo} src={cat} alt="" />
+          <img className={c.photo} src={boulderTwo} alt="" />
         </div>
       </div>
       <div className={c.about}>

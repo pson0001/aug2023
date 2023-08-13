@@ -86,6 +86,10 @@ const StudentApps = () => {
         </div>
       </div>
       <Footer
+        left={{
+          to: '/',
+          name: 'HOME',
+        }}
         right={{
           to: '/monash-course-mapper',
           name: 'COURSE MAPPER',

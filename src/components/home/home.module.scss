@@ -200,6 +200,21 @@ $green: #65de6d;
     transform: rotate(135deg);
   }
 }
+
+.photoDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  gap: 1rem;
+  font-size: 1rem;
+  .photo {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -209,5 +224,19 @@ $green: #65de6d;
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 900px) {
+  .project {
+    .projectImg {
+      img {
+        width: 300px !important;
+      }
+    }
+    &:hover {
+      .projectImg {
+        top: -80px !important;
+      }
+    }
   }
 }
