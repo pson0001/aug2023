@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/aug2023/static/css/main.196b9dbc.css",
+    "main.js": "/aug2023/static/js/main.0b43a08a.js",
+    "static/js/787.49c87df0.chunk.js": "/aug2023/static/js/787.49c87df0.chunk.js",
+    "static/media/landing-browser.png": "/aug2023/static/media/landing-browser.548b737d62e949096c0a.png",
+    "static/media/yoda.gif": "/aug2023/static/media/yoda.215d3e940a450abf2c3b.gif",
+    "static/media/flower.gif": "/aug2023/static/media/flower.f7c6e0a048263d2a0909.gif",
+    "static/media/course-mapper-browser.png": "/aug2023/static/media/course-mapper-browser.e1eeb9af1f89884d3452.png",
+    "static/media/map-before.png": "/aug2023/static/media/map-before.2801aa04535b37d87168.png",
+    "static/media/photoThree.jpg": "/aug2023/static/media/photoThree.ecd0404ee0db96298b7b.jpg",
+    "static/media/detail-two.png": "/aug2023/static/media/detail-two.7ca960421def4d1764da.png",
+    "static/media/detail-one.png": "/aug2023/static/media/detail-one.3e2f04425c947c1dfbb1.png",
+    "static/media/library-browser.png": "/aug2023/static/media/library-browser.a8228eb9f654058c4173.png",
+    "static/media/landing.png": "/aug2023/static/media/landing.1e8813c845e0a7d0f88c.png",
+    "static/media/peerview-browser.png": "/aug2023/static/media/peerview-browser.d8bb98f059cc15565d56.png",
+    "static/media/map-after.png": "/aug2023/static/media/map-after.c3da4f6ad2785c4dac53.png",
+    "static/media/core-concepts-before.png": "/aug2023/static/media/core-concepts-before.6daef56a685e56450e1b.png",
+    "static/media/core-concepts-after.png": "/aug2023/static/media/core-concepts-after.b7110fc2b925c493372b.png",
+    "static/media/cat.jpg": "/aug2023/static/media/cat.60a8224f33af570cc83f.jpg",
+    "static/media/photoOne.jpg": "/aug2023/static/media/photoOne.73c3fbe77d909961191d.jpg",
+    "static/media/ui.png": "/aug2023/static/media/ui.b2c0130b8da831eae6f8.png",
+    "static/media/wireframe.png": "/aug2023/static/media/wireframe.b4e5ef66560edfe1b398.png",
+    "static/media/photoFour.jpg": "/aug2023/static/media/photoFour.0e5e2b52815342041516.jpg",
+    "static/media/boulderTwo.jpg": "/aug2023/static/media/boulderTwo.0e39f6b1de86d81efa6b.jpg",
+    "static/media/frame.png": "/aug2023/static/media/frame.a1b11559a497c133e9b9.png",
+    "static/media/dls.png": "/aug2023/static/media/dls.059688cbfc5a1d6d29cc.png",
+    "static/media/boulderOne.jpg": "/aug2023/static/media/boulderOne.f33eabaa66bb2792c4ac.jpg",
+    "static/media/peerview.png": "/aug2023/static/media/peerview.fa1ebd18ab5cbf7602ca.png",
+    "static/media/sitemap.png": "/aug2023/static/media/sitemap.bc54edbd44c37b85c9e7.png",
+    "static/media/userflow.png": "/aug2023/static/media/userflow.e516578a296e4e11d3b1.png",
+    "index.html": "/aug2023/index.html",
+    "main.196b9dbc.css.map": "/aug2023/static/css/main.196b9dbc.css.map",
+    "main.0b43a08a.js.map": "/aug2023/static/js/main.0b43a08a.js.map",
+    "787.49c87df0.chunk.js.map": "/aug2023/static/js/787.49c87df0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.196b9dbc.css",
+    "static/js/main.0b43a08a.js"
+  ]
+}
