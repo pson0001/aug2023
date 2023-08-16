@@ -2,7 +2,7 @@
   "name": "website2023",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pson0001.github.io/aug2023",
+  "homepage": "https://www.pings.page",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.16.5",
