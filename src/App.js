@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion'
 import CourseMapper from './components/projects/CourseMapper'
 import Peerview from './components/projects/Peerview'
 import Library from './components/projects/Library'
+import About from './components/about/About'
 function App() {
   const location = useLocation()
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/monash-course-mapper" element={<CourseMapper />} />
           <Route path="/monash-peerview" element={<Peerview />} />
           <Route path="/monash-react-component-library" element={<Library />} />
+          <Route path="/ping-me" element={<About />} />
 
           <Route path="*" element={<NoPage />} />
         </Route>

@@ -1,0 +1,91 @@
+$pink: #f6d1c5;
+$yellow: #f6b055;
+$blue: #7fd3e5;
+$green: #65de6d;
+.aboutContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 40px 0px 40px;
+}
+.photo {
+  width: 200px;
+  height: 200px;
+  img {
+    width: 100%;
+  }
+}
+.about {
+  margin-top: 200px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0px 40px;
+
+  .aboutTitle {
+    padding: 8px 32px;
+    margin: 0.4rem 0;
+    border: 1px solid #000;
+    border-radius: 100px;
+    width: fit-content;
+  }
+  a {
+    color: #000;
+    display: inline-block;
+    svg {
+      margin-bottom: -6px;
+    }
+  }
+  .aboutDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    & > div {
+      line-height: 2.4rem;
+    }
+  }
+}
+
+.photoDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  gap: 1rem;
+  font-size: 1rem;
+  .photo {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
+
+.tag {
+  padding: 8px 16px;
+  margin: 0.4rem;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+.one {
+  background-color: $pink;
+}
+.two {
+  background-color: $yellow;
+}
+.three {
+  background-color: $blue;
+}
+.four {
+  background-color: $green;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutContainer {
+    padding: 40px 0px 0px 0px;
+  }
+  .photoDetails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

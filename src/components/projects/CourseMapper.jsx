@@ -55,7 +55,7 @@ const CourseMapper = () => {
             <div className={c.projectHighlight}>
               <div>
                 <span className={c.subLabel}>GENERATED</span>
-                <span className={c.number}>54,000+</span>
+                <span className={c.number}>60,000+</span>
                 <span>Personalized course plans</span>
               </div>
               <div>

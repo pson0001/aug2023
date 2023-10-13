@@ -1,162 +1,85 @@
-$pink: #feb39e;
+$pink: #f6d1c5;
 $yellow: #f6b055;
-$blue: #5baaff;
+$blue: #7fd3e5;
 $green: #65de6d;
 .landing {
-  position: relative;
-  background-color: #fff;
-  overflow: hidden;
-  border-bottom: 1px solid #000;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 40px;
 }
+
 .intro {
-  margin-top: 50vh;
-  padding: 0px 46px;
-  & > span {
-    font-size: 1.2rem;
-  }
+  position: relative;
+  height: 100vh;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  line-height: 3.2rem;
+  margin: 0 40px;
 }
 .projectContainer {
   padding-top: 20px;
   .project {
-    border-top: 1px solid #000;
-    background-color: #fff;
-    margin-bottom: -28px;
-    padding: 0px 40px;
-    transition: all 0.6s ease;
+    margin-bottom: 200px;
     a {
       color: #000;
       text-decoration: none;
-      position: relative;
-
-      .label {
-        position: absolute;
-        background-color: #fff;
-        border-radius: 100px;
-        border: 1px solid #000;
-        padding: 8px 16px;
-        width: fit-content;
-        content: '';
-        top: 90px;
-        transition: all 0.3s ease-in-out;
-        animation: fadeInAnimation ease 1.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-      .projectImg {
-        transition: all 0.3s ease-in-out;
-
-        position: absolute;
-        content: '';
-        top: 90px;
-        right: 0;
-        transform: rotate(0deg);
-        img {
-          border-radius: 16px;
-          width: 500px;
-          border: 1px solid #000;
-
-          animation: fadeInAnimation ease 1.5s;
-          animation-iteration-count: 1;
-          animation-fill-mode: forwards;
-        }
-      }
-    }
-    &:hover {
-      transform: translateY(-28px) translateZ(0px) !important;
-      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
       cursor: pointer;
-      a {
-        .label {
-          top: -28px;
-          transition: all 0.3s ease-in-out;
+      .projectTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 40px;
+        gap: 0.4rem;
+        & > * {
+          width: 50%;
         }
-        .projectImg {
-          transition: all 0.3s ease-in-out;
-          transform: rotate(-15deg);
-          top: -160px;
+        h1 {
+          margin: 0.4rem 0;
+        }
+        .label {
+          padding: 8px 16px;
+          border: 1px solid #000;
+          border-radius: 100px;
+          width: fit-content;
+        }
+      }
+
+      .projectImg {
+        // width: 50%;
+        img {
+          width: 100%;
         }
       }
     }
   }
-  .one {
-    &:hover {
-      background-color: $yellow;
-    }
-  }
-  .two {
-    a .projectImg {
-      right: 100px;
-    }
-    &:hover {
-      background-color: $blue;
-    }
-  }
-  .three {
-    a .projectImg {
-      right: 200px;
-    }
-    &:hover {
-      background-color: $pink;
-    }
-  }
-  .four {
-    &:hover {
-      background-color: $green;
-    }
-  }
-}
-.about {
-  margin-top: 200px;
-  padding: 0px 46px;
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  .aboutTitle {
-    padding: 8px 32px;
-    margin: 0.4rem;
-    border: 1px solid #000;
-    border-radius: 100px;
-    width: fit-content;
-  }
-  a {
-    color: #000;
-    display: inline-block;
-    svg {
-      margin-bottom: -6px;
-    }
-  }
-  .aboutDetails {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 1rem;
-    & > div {
-      line-height: 2.4rem;
-    }
-    .tag {
-      padding: 8px 16px;
-      margin: 0.4rem;
-      border: 1px solid #000;
-      border-radius: 100px;
-    }
-    .one {
-      background-color: $pink;
-    }
-    .two {
-      background-color: $yellow;
-    }
-    .three {
-      background-color: $blue;
-    }
-    .four {
-      background-color: $green;
-    }
-  }
 }
 
+.tag {
+  padding: 8px 16px;
+  margin: 0.4rem;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+.one {
+  background-color: $pink;
+}
+.two {
+  background-color: $yellow;
+}
+.three {
+  background-color: $blue;
+}
+.four {
+  background-color: $green;
+}
 .viewProject a {
-  padding: 0px 46px;
+  // padding: 0px 46px;
   border-top: 1px solid black;
   margin-top: 200px;
   margin-bottom: 2rem;
@@ -202,62 +125,42 @@ $green: #65de6d;
   }
 }
 
-.photoDetails {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-
-  gap: 1rem;
-  font-size: 1rem;
-  .photo {
+@media screen and (max-width: 800px) {
+  .landing {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px !important;
+  }
+  .intro {
+    margin: 0 20px;
+  }
+  .projectTitle {
+    flex-direction: column !important;
     width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 16px;
-  }
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 900px) {
-  .project {
-    .projectImg {
-      img {
-        width: 300px !important;
-      }
-    }
-    &:hover {
-      .projectImg {
-        top: -80px !important;
-      }
+    align-items: flex-start !important;
+    margin: 0 20px !important;
+    & > * {
+      width: 100% !important;
     }
   }
 }
-@media screen and (max-width: 600px) {
-  .project {
-    .projectImg {
-      img {
-        width: 300px !important;
-      }
-    }
-    &:hover {
-      .projectImg {
-        top: 160px !important;
-      }
-      .label {
-        top: 160px !important;
-      }
-    }
-  }
-  .photoDetails {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+// @media screen and (max-width: 600px) {
+//   .project {
+//     .projectImg {
+//       img {
+//         width: 300px !important;
+//       }
+//     }
+//     &:hover {
+//       .projectImg {
+//         top: 160px !important;
+//       }
+//       .label {
+//         top: 160px !important;
+//       }
+//     }
+//   }
+//   .photoDetails {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }

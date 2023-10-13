@@ -1,6 +1,5 @@
 .pageLayout {
   // overflow-x: hidden;
-
   .navbar {
     display: flex;
     flex-direction: row;
@@ -10,7 +9,7 @@
     position: fixed;
     top: 0;
     z-index: 9;
-
+    width: calc(100% - 80px);
     li {
       list-style: none;
       a {
@@ -26,6 +25,7 @@
         color: #101010;
         transition: all 0.3s ease;
         font-weight: 700;
+        width: max-content;
         &:hover {
           transition: all 0.3s ease;
           background-color: #101010;

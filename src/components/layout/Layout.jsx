@@ -10,6 +10,9 @@ const Layout = () => {
               P
             </Link>
           </li>
+          <li>
+            <Link to="/ping-me">Ping Me</Link>
+          </li>
         </ul>
       </nav>
 
