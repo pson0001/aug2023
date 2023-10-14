@@ -24,7 +24,7 @@ const Home = () => {
         <div className={c.intro}>
           <div>Hello, I'm Ping Song,</div>
           <div>
-            a principal{' '}
+            a passionate{' '}
             <span className={[c.tag, c.one].join(' ')}>
               UX/UI&nbsp;Designer
             </span>

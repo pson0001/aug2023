@@ -5,6 +5,10 @@ import Footer from '../utils/Footer'
 import c from './project.module.scss'
 import landing from '../assets/landing-browser.png'
 import Icon from '../assets/Icon'
+import differences from '../assets/differences.png'
+import current from '../assets/portal-current.png'
+import future from '../assets/portal-future.png'
+
 const StudentApps = () => {
   useEffect(() => {
     let timer1 = setTimeout(() => window.scrollTo(0, 0), 0)
@@ -44,7 +48,74 @@ const StudentApps = () => {
         </div>
         <div className={c.projectContent}>
           <div className={c.section}>
-            <div className={c.title}>THE UPDATE</div>
+            <div className={c.title}>BACKGROUND</div>
+
+            <div className={c.subSection}>
+              <div className={c.description}>
+                The university has made the decision to update the current
+                23-year-old student management system as part of a digital
+                transformation initiative. This presents a unique opportunity to
+                reimagine and enhance the student experience.
+              </div>
+            </div>
+          </div>
+
+          <div className={c.section}>
+            <div className={c.title}>UNDERSTAND</div>
+
+            <div className={c.subSection}>
+              <div>
+                <div className={c.subTitle}>Every student is different…</div>
+                <div className={c.projectImg}>
+                  <img
+                    src={differences}
+                    alt="differences"
+                    className={c.inline}
+                  />
+                </div>
+                <div className={c.description}>
+                  These individual differences influence the feelings, thoughts
+                  and behaviours of different students, and in the context of
+                  university, this means that different students are driven and
+                  motivated by different things
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={c.section}>
+            <div className={c.title}>THE BIG GOAL</div>
+
+            <div className={c.subSection}>
+              <div className={c.subTitle}>High level student life cycle</div>
+              <div className={c.arrowContainer}>
+                <span>Prospective students</span>
+                <Icon.ArrowRightSmall />
+                <span>Enrolling students</span> <Icon.ArrowRightSmall />
+                <span>Current students</span> <Icon.ArrowRightSmall />
+                <span>Graduates</span>
+              </div>
+
+              <div>
+                Mapping out the university experience into four stages reveals a
+                comprehensive perspective. Understanding this high-level cycle
+                is crucial in addressing overarching issues. Ultimately,
+                students seek a sense of success during their university
+                journey. A continuous and seamless digital experience plays a
+                pivotal role in enabling this fulfillment.
+              </div>
+              <div className={c.projectImg}>
+                <div className={c.subTitle}>Current</div>
+                <img src={current} alt="current" className={c.slide} />
+
+                <div className={c.subTitle}>Future</div>
+                <img src={future} alt="future" className={c.slide} />
+              </div>
+            </div>
+          </div>
+
+          <div className={c.section}>
+            <div className={c.title}>Coming soon...</div>
 
             <div className={c.subSection}>
               <div className={c.description}>

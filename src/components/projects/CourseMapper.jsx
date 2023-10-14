@@ -7,6 +7,7 @@ import mapBefore from '../assets/map-before.png'
 import mapAfter from '../assets/map-after.png'
 import detailOne from '../assets/detail-one.png'
 import detailTwo from '../assets/detail-two.png'
+import detailThree from '../assets/detail-three.png'
 
 import transition from '../layout/transition'
 import Footer from '../utils/Footer'
@@ -145,9 +146,6 @@ const CourseMapper = () => {
                     categories of student enquiries and synthesized the
                     resulting requirements and expectations.
                   </div>
-                  {/* <div className={c.projectImg}>
-                  <img src={steps} alt="mapper" />
-                </div> */}
                 </div>
               </div>
             </div>
@@ -239,6 +237,18 @@ const CourseMapper = () => {
 
                 <div className={c.projectImg}>
                   <img src={detailTwo} alt="mapper" className={c.inline} />
+                </div>
+
+                <div className={c.subTitle}>Communication and rewards</div>
+                <div className={c.subDescription}>
+                  Reflecting the status of whether students have viewed their
+                  plans enhances communication between students and course
+                  advisers, fostering a rewarding sense of accomplishment for
+                  both parties.
+                </div>
+
+                <div className={c.projectImg}>
+                  <img src={detailThree} alt="mapper" className={c.inline} />
                 </div>
               </div>
             </div>

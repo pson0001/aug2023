@@ -536,3 +536,23 @@ Icon.Link = () => (
     <polyline points="15 4 20 4 20 9" />
   </svg>
 )
+
+Icon.ArrowRightSmall = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-arrow-narrow-right"
+    width="28"
+    height="28"
+    viewBox="0 0 24 24"
+    strokeWidth="1.5"
+    stroke="#333333"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M5 12l14 0" />
+    <path d="M15 16l4 -4" />
+    <path d="M15 8l4 4" />
+  </svg>
+)

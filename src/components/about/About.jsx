@@ -47,6 +47,7 @@ const About = () => {
               </span>{' '}
               .
             </div>
+            <div></div>
             <div>
               My journey in design began with a Bachelor's degree in
               <span className={[c.tag, c.two].join(' ')}>
