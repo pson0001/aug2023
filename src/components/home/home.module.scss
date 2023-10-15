@@ -2,6 +2,23 @@ $pink: #f6d1c5;
 $yellow: #f6b055;
 $blue: #7fd3e5;
 $green: #65de6d;
+.landingContainer {
+  position: relative;
+}
+canvas {
+  /* all four are needed to support the most browsers */
+  // image-rendering: -moz-crisp-edges;
+  // image-rendering: -webkit-crisp-edges;
+  // image-rendering: pixelated;
+  // image-rendering: crisp-edges;
+}
+/* optional: can also be applied to `img` tags */
+
+.canvasContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 .landing {
   max-width: 1000px;
   margin: 0 auto;
@@ -20,7 +37,7 @@ $green: #65de6d;
   margin: 0 40px;
 }
 .projectContainer {
-  padding-top: 20px;
+  padding-top: 100px;
   .project {
     margin-bottom: 200px;
     a {
@@ -125,6 +142,33 @@ $green: #65de6d;
   }
 }
 
+.design {
+  position: relative;
+  cursor: pointer;
+  .dot {
+    position: absolute;
+    z-index: -1;
+    height: 8px;
+    width: 8px;
+    background-color: $pink;
+    top: 10px;
+    right: 20px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    transition: all 0.2s ease-out;
+    &.one {
+      top: 10px;
+      right: 20px;
+    }
+  }
+  &:hover {
+    .one {
+      top: -20px;
+      right: -20px;
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   .landing {
     max-width: 1000px;
@@ -144,23 +188,3 @@ $green: #65de6d;
     }
   }
 }
-// @media screen and (max-width: 600px) {
-//   .project {
-//     .projectImg {
-//       img {
-//         width: 300px !important;
-//       }
-//     }
-//     &:hover {
-//       .projectImg {
-//         top: 160px !important;
-//       }
-//       .label {
-//         top: 160px !important;
-//       }
-//     }
-//   }
-//   .photoDetails {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
