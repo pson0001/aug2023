@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
+import useWindowSize from '../utils/use-window-size'
 
 const Canvas = (props) => {
   const {
@@ -11,6 +12,7 @@ const Canvas = (props) => {
   } = props
   const canvasRef = useRef()
   const [context, setContext] = useState(null)
+  const windowSize = useWindowSize()
 
   useEffect(() => {
     if (canvasRef.current) {
@@ -28,7 +30,7 @@ const Canvas = (props) => {
         establishCanvasWidth(ctx.canvas.width)
       }
     }
-  }, [canvasRef, establishCanvasWidth, establishContext])
+  }, [canvasRef, establishCanvasWidth, establishContext, windowSize])
 
   const resizeCanvas = (context) => {
     const canvas = context.canvas

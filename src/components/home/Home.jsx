@@ -10,6 +10,7 @@ import transition from '../layout/transition'
 import Footer from '../utils/Footer'
 import Canvas from './Canvas'
 import Icon from '../assets/Icon'
+import useWindowSize from '../utils/use-window-size'
 
 const Home = () => {
   useEffect(() => {
@@ -117,7 +118,8 @@ const Home = () => {
       }
     }
   }
-
+  const windowSize = useWindowSize()
+  // console.log(windowSize)
   const textRef = useRef()
   const arrowRef = useRef()
 
@@ -127,27 +129,27 @@ const Home = () => {
     'Wait, wrong button! Try this one',
     'hmm... how about scroll now',
     'Noooo stop, just scroll...',
-    'Pls stop',
-    'Nooooo',
+    'Plssss stoppppp',
+    'Nooooooooooooo',
     'Someone needs to clean this up...',
-    'Seriously??',
-    'ughhhhh....',
+    'Seriously????????',
+    'ughhhhhhhh............',
   ]
 
   const drawPink = () => {
     console.log(clickCounter)
-    arrowRef.current.style.left = `420px`
-    clickCounter++
-    // if (clickCounter === 1) {
-    //   setBlue(true)
-    // } else {
-    // setBlue(true)
-    // }
 
-    if (clickCounter >= textList.length) {
-      textRef.current.innerText = 'ughhhhh....'
-    } else {
-      textRef.current.innerText = textList[clickCounter]
+    if (textRef.current && arrowRef.current) {
+      arrowRef.current.style.transform = `scaleX(-1)`
+      arrowRef.current.style.left = `180px`
+
+      clickCounter++
+
+      if (clickCounter >= textList.length) {
+        textRef.current.innerText = 'ughhhhhhhh............'
+      } else {
+        textRef.current.innerText = textList[clickCounter]
+      }
     }
 
     drawBalls(true, false)
@@ -155,13 +157,13 @@ const Home = () => {
 
   const drawBlue = () => {
     clickCounter++
-    console.log(clickCounter)
-    // textRef.current.style.rotate = `0deg`
-
-    if (clickCounter >= textList.length) {
-      textRef.current.innerText = 'ughhhhh....'
-    } else {
-      textRef.current.innerText = textList[clickCounter]
+    if (textRef.current) {
+      textRef.current.style.right = '0px'
+      if (clickCounter >= textList.length) {
+        textRef.current.innerText = 'ughhhhhhhh............'
+      } else {
+        textRef.current.innerText = textList[clickCounter]
+      }
     }
     drawBalls(false, true)
   }
@@ -179,12 +181,16 @@ const Home = () => {
         <div className={c.intro}>
           <div>Hello, I'm Ping Song,</div>
           <div className={c.sentence}>
-            <div className={c.arrow} ref={arrowRef}>
-              <Icon.ArrowHandDraw />
-              <div className={c.text} ref={textRef}>
-                Click for fun!
+            {windowSize.width >= 650 && (
+              <div className={c.textContainer}>
+                <div ref={arrowRef} className={c.arrow}>
+                  <Icon.ArrowHandDraw />
+                </div>
+                <div className={c.text} ref={textRef}>
+                  Click for fun!
+                </div>
               </div>
-            </div>
+            )}
             a passionate{' '}
             <button
               className={[c.tag, c.one, c.design].join(' ')}

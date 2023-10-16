@@ -148,27 +148,25 @@ canvas {
 }
 .sentence {
   position: relative;
-  .arrow {
+  .textContainer {
     position: absolute;
 
     bottom: 60px;
     left: 280px;
     line-height: 24px;
+    .arrow {
+      position: absolute;
+      top: -40px;
+      left: -80px;
+    }
     .text {
       position: absolute;
       width: 180px;
-      top: -60px;
-      left: 70px;
-      rotate: -25deg;
+      top: -55px;
+      left: 0px;
+      // rotate: -25deg;
     }
   }
-
-  // &:hover {
-  //   .one {
-  //     top: -20px;
-  //     right: -20px;
-  //   }
-  // }
 }
 .design {
   position: relative;
