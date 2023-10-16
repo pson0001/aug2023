@@ -9,6 +9,7 @@ import library from '../assets/library-browser.png'
 import transition from '../layout/transition'
 import Footer from '../utils/Footer'
 import Canvas from './Canvas'
+import Icon from '../assets/Icon'
 
 const Home = () => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const Home = () => {
     setCanvasWidth(width)
   }
 
-  var colors = ['#f6d1c5', '#7fd3e5']
+  var colors = ['#ffd3cb', '#a2f1ff']
 
   var gravity = 0.2
   var friction = 0.4
@@ -88,7 +89,7 @@ const Home = () => {
     for (let i = 0; i < 20; i++) {
       var radius = randomIntFromRange(8, 40)
       var x = randomIntFromRange(radius, ctx.canvas.width - radius)
-      var y = 0
+      var y = -40
       var dx = randomIntFromRange(-3, 3)
       var dy = randomIntFromRange(-2, 2)
       if (pink) {
@@ -116,18 +117,58 @@ const Home = () => {
       }
     }
   }
+
+  const textRef = useRef()
+  const arrowRef = useRef()
+
+  let clickCounter = 0
+  const textList = [
+    'Click for fun!',
+    'Wait, wrong button! Try this one',
+    'hmm... how about scroll now',
+    'Noooo stop, just scroll...',
+    'Pls stop',
+    'Nooooo',
+    'Someone needs to clean this up...',
+    'Seriously??',
+    'ughhhhh....',
+  ]
+
   const drawPink = () => {
+    console.log(clickCounter)
+    arrowRef.current.style.left = `420px`
+    clickCounter++
+    // if (clickCounter === 1) {
+    //   setBlue(true)
+    // } else {
+    // setBlue(true)
+    // }
+
+    if (clickCounter >= textList.length) {
+      textRef.current.innerText = 'ughhhhh....'
+    } else {
+      textRef.current.innerText = textList[clickCounter]
+    }
+
     drawBalls(true, false)
   }
 
   const drawBlue = () => {
+    clickCounter++
+    console.log(clickCounter)
+    // textRef.current.style.rotate = `0deg`
+
+    if (clickCounter >= textList.length) {
+      textRef.current.innerText = 'ughhhhh....'
+    } else {
+      textRef.current.innerText = textList[clickCounter]
+    }
     drawBalls(false, true)
   }
 
   return (
     <div className={c.landingContainer}>
       <div className={c.canvasContainer}>
-        {/* <canvas ref={canvasRef}></canvas> */}
         <Canvas
           draw={draw}
           establishContext={establishContext}
@@ -137,21 +178,27 @@ const Home = () => {
       <div className={c.landing}>
         <div className={c.intro}>
           <div>Hello, I'm Ping Song,</div>
-          <div>
+          <div className={c.sentence}>
+            <div className={c.arrow} ref={arrowRef}>
+              <Icon.ArrowHandDraw />
+              <div className={c.text} ref={textRef}>
+                Click for fun!
+              </div>
+            </div>
             a passionate{' '}
-            <span
+            <button
               className={[c.tag, c.one, c.design].join(' ')}
               onClick={drawPink}
             >
-              UX/UI&nbsp;Designer
-            </span>
+              <span className={c.tagText}>UX/UI&nbsp;Designer</span>
+            </button>
             and{' '}
-            <span
+            <button
               className={[c.tag, c.three, c.design].join(' ')}
               onClick={drawBlue}
             >
-              Front&nbsp;end&nbsp;Developer
-            </span>
+              <span className={c.tagText}> Front&nbsp;end&nbsp;Developer </span>
+            </button>
           </div>
           <div>
             with 5 years of experience at Monash University, based in Australia

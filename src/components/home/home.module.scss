@@ -1,16 +1,17 @@
-$pink: #f6d1c5;
+$pink: #ffd3cb;
 $yellow: #f6b055;
-$blue: #7fd3e5;
-$green: #65de6d;
+$blue: #a2f1ff;
+$green: #8fe295;
+
 .landingContainer {
   position: relative;
 }
 canvas {
   /* all four are needed to support the most browsers */
-  // image-rendering: -moz-crisp-edges;
-  // image-rendering: -webkit-crisp-edges;
-  // image-rendering: pixelated;
-  // image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 /* optional: can also be applied to `img` tags */
 
@@ -33,11 +34,11 @@ canvas {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  line-height: 3.2rem;
+  line-height: 3.6rem;
   margin: 0 40px;
 }
 .projectContainer {
-  padding-top: 100px;
+  padding-top: 20px;
   .project {
     margin-bottom: 200px;
     a {
@@ -82,6 +83,10 @@ canvas {
   margin: 0.4rem;
   border: 1px solid #000;
   border-radius: 100px;
+  font-size: inherit;
+  .tagText {
+    pointer-events: none;
+  }
 }
 .one {
   background-color: $pink;
@@ -141,32 +146,33 @@ canvas {
     transform: rotate(135deg);
   }
 }
+.sentence {
+  position: relative;
+  .arrow {
+    position: absolute;
 
+    bottom: 60px;
+    left: 280px;
+    line-height: 24px;
+    .text {
+      position: absolute;
+      width: 180px;
+      top: -60px;
+      left: 70px;
+      rotate: -25deg;
+    }
+  }
+
+  // &:hover {
+  //   .one {
+  //     top: -20px;
+  //     right: -20px;
+  //   }
+  // }
+}
 .design {
   position: relative;
   cursor: pointer;
-  .dot {
-    position: absolute;
-    z-index: -1;
-    height: 8px;
-    width: 8px;
-    background-color: $pink;
-    top: 10px;
-    right: 20px;
-    border: 1px solid #000;
-    border-radius: 100px;
-    transition: all 0.2s ease-out;
-    &.one {
-      top: 10px;
-      right: 20px;
-    }
-  }
-  &:hover {
-    .one {
-      top: -20px;
-      right: -20px;
-    }
-  }
 }
 
 @media screen and (max-width: 800px) {

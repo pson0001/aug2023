@@ -556,3 +556,35 @@ Icon.ArrowRightSmall = () => (
     <path d="M15 8l4 4" />
   </svg>
 )
+Icon.ArrowHandDraw = () => (
+  <svg
+    width="65"
+    height="37"
+    viewBox="0 0 65 37"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M64.0918 1.80936C40.5125 -3.33475 24.441 17.5261 33.9783 22.615C45.6035 28.8178 58.4649 10.1768 42.4625 7.44513C19.6286 3.5473 6.4833 19.4396 6.4833 36.0523"
+      stroke="black"
+      strokeLinecap="round"
+    />
+    <path
+      d="M2.99999 32.0869L6.5366 36.1131L10.5628 32.5765"
+      stroke="black"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M64.0918 1.80936C40.5125 -3.33475 24.441 17.5261 33.9783 22.615C45.6035 28.8178 58.4649 10.1768 42.4625 7.44513C19.6286 3.5473 6.4833 19.4396 6.4833 36.0523"
+      stroke="black"
+      strokeLinecap="round"
+    />
+    <path
+      d="M0.910614 29.708L6.53661 36.1129L12.9415 30.4869"
+      stroke="black"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+)
