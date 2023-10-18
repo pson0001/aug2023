@@ -72,7 +72,7 @@ const CourseMapper = () => {
               <div>
                 <span className={c.subLabel}>REDUCE HANDLING TIMES</span>
                 <span className={c.number}>{'20 -> 5'}</span>
-                <span>minutes</span>
+                <span>Minutes</span>
               </div>
             </div>
           </div>

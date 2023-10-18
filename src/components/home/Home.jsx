@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import c from './home.module.scss'
 import landingImg from '../assets/landing-browser.png'
@@ -22,7 +22,7 @@ const Home = () => {
   }, [])
 
   const [ctx, setCtx] = useState(null)
-  const [canvasWidth, setCanvasWidth] = useState(null)
+  const [setCanvasWidth] = useState(null)
   const establishContext = (context) => {
     setCtx(context)
   }
@@ -128,8 +128,8 @@ const Home = () => {
     'Click for fun!',
     'Wait, wrong button! Try this one',
     'hmm... how about scroll now',
-    'Noooo stop, just scroll...',
-    'Plssss stoppppp',
+    'No stop, just scroll...',
+    'Please stoppppp',
     'Nooooooooooooo',
     'Someone needs to clean this up...',
     'Seriously????????',
@@ -141,7 +141,8 @@ const Home = () => {
 
     if (textRef.current && arrowRef.current) {
       arrowRef.current.style.transform = `scaleX(-1)`
-      arrowRef.current.style.left = `180px`
+      arrowRef.current.style.left = `140px`
+      textRef.current.style.left = `-40px`
 
       clickCounter++
 
@@ -246,7 +247,7 @@ const Home = () => {
           </div>
 
           <div className={c.project}>
-            <Link to={'/monash-course-mapper'}>
+            <Link to={'/monash-peerview'}>
               <div className={c.projectImg}>
                 <img src={peerviewImg} alt="landing" />
               </div>

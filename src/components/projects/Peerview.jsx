@@ -7,6 +7,11 @@ import sitemap from '../assets/sitemap.png'
 import ui from '../assets/ui.png'
 import userflow from '../assets/userflow.png'
 import wireframe from '../assets/wireframe.png'
+
+import peerview1 from '../assets/peerview-1.png'
+import peerview2 from '../assets/peerview-2.png'
+import peerview3 from '../assets/peerview-3.png'
+
 import Footer from '../utils/Footer'
 const Peerview = () => {
   useEffect(() => {
@@ -178,12 +183,17 @@ const Peerview = () => {
                 </div>
                 <div className={c.projectImg}>
                   <img src={ui} alt="ui" className={c.inline} />
+                  <img src={peerview1} alt="ui" className={c.inline} />
+
+                  <img src={peerview2} alt="ui" className={c.inline} />
+
+                  <img src={peerview3} alt="ui" className={c.inline} />
                 </div>
               </div>
             </div>
           </div>
           <div className={c.section}>
-            <div className={c.title}>Design System</div>
+            <div className={c.title}>SOMETHING SPECIAL</div>
             <div className={c.subSection}>
               <div className={c.projectImg}>
                 <img src={dls} alt="dls" className={c.inline} />
