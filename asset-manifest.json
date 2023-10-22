@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.61b54a90.css",
-    "main.js": "/static/js/main.50f9c4bd.js",
+    "main.js": "/static/js/main.b4198388.js",
     "static/js/787.49c87df0.chunk.js": "/static/js/787.49c87df0.chunk.js",
     "static/media/yoda.gif": "/static/media/yoda.215d3e940a450abf2c3b.gif",
     "static/media/flower.gif": "/static/media/flower.f7c6e0a048263d2a0909.gif",
@@ -32,18 +32,18 @@
     "static/media/dls.png": "/static/media/dls.77243e77a32460d17335.png",
     "static/media/boulderOne.jpg": "/static/media/boulderOne.f33eabaa66bb2792c4ac.jpg",
     "static/media/sad.png": "/static/media/sad.f40dfef85d1f896106c7.png",
-    "static/media/portal-current.png": "/static/media/portal-current.bd7d3e880b57e7742fc8.png",
-    "static/media/portal-future.png": "/static/media/portal-future.572f41256a6ff09f4765.png",
+    "static/media/portal-current.png": "/static/media/portal-current.d8c4f0a5c490ad1a331e.png",
+    "static/media/portal-future.png": "/static/media/portal-future.3c6445302f7f257d212e.png",
     "static/media/sitemap.png": "/static/media/sitemap.bc54edbd44c37b85c9e7.png",
     "static/media/userflow.png": "/static/media/userflow.e516578a296e4e11d3b1.png",
     "static/media/differences.png": "/static/media/differences.c009c6d2e77b761e952a.png",
     "index.html": "/index.html",
     "main.61b54a90.css.map": "/static/css/main.61b54a90.css.map",
-    "main.50f9c4bd.js.map": "/static/js/main.50f9c4bd.js.map",
+    "main.b4198388.js.map": "/static/js/main.b4198388.js.map",
     "787.49c87df0.chunk.js.map": "/static/js/787.49c87df0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61b54a90.css",
-    "static/js/main.50f9c4bd.js"
+    "static/js/main.b4198388.js"
   ]
 }
