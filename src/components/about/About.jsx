@@ -34,17 +34,23 @@ const About = () => {
           </div>
           <div className={c.aboutDetails}>
             <div>
-              I’ve been doing
+              I bring
+              <span className={[c.tag, c.five].join(' ')}>7&nbsp;years</span> of
+              professional expertise to the table,
+            </div>
+            <div>
+              with 5 years dedicated to{' '}
               <span className={[c.tag, c.one].join(' ')}>
                 UX/UI&nbsp;design
               </span>{' '}
-              for 5 years, currently working at Monash University.
+              at Monash University
             </div>
             <div>
-              preceded by 2 years of experience in
+              {' '}
+              and an additional 2 years specializing in
               <span className={[c.tag, c.four].join(' ')}>
-                branding&nbsp;design
-              </span>{' '}
+                Branding&nbsp;design
+              </span>
               .
             </div>
             <div></div>

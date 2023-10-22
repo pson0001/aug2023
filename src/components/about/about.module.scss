@@ -2,7 +2,7 @@ $pink: #ffd3cb;
 $yellow: #f6b055;
 $blue: #a2f1ff;
 $green: #8fe295;
-
+$pinker: #e5d2ff;
 .aboutContainer {
   max-width: 1000px;
   margin: 0 auto;
@@ -80,6 +80,10 @@ $green: #8fe295;
 }
 .four {
   background-color: $green;
+}
+
+.five {
+  background-color: $pinker;
 }
 
 @media screen and (max-width: 800px) {

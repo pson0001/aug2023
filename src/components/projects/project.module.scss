@@ -49,7 +49,7 @@ $iconBackground: #e6ded7;
   .subLabel {
     font-size: 1rem;
     color: $grey;
-    margin-bottom: 0.2rem;
+    margin-bottom: -0.2rem;
     font-weight: 300;
   }
   .title {
@@ -63,6 +63,7 @@ $iconBackground: #e6ded7;
   }
   .subTitle {
     font-weight: 500;
+    margin-bottom: 0.4rem;
   }
   .number {
     font-size: 4rem;

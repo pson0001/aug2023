@@ -31,17 +31,22 @@ const Peerview = () => {
 
             <span className={c.subLabel}>RESPONSIBILITY</span>
             <span className={c.subTitle}>UX/UI Design, User Testing</span>
+
+            <span className={c.subLabel}>TEAM</span>
+            <span className={c.subTitle}>1 designer, 1 developer</span>
           </div>
           <div className={c.projectIntro}>
             <span className={c.subLabel}>OVERVIEW</span>
             <span className={c.subTitle}>
-              Peer review of teaching is a valuable method for gathering
-              evidence about one's teaching practices. As a part of ongoing
-              evaluation and enhancement of learning and teaching, it plays a
-              vital role in recognizing excellence. This process serves as an
-              important contributor to the continuous improvement of education,
-              fostering a culture of excellence and innovation in the field of
-              teaching and learning.
+              Peerview is a custom tool tailored for Monash University
+              academics, facilitating ongoing evaluation and enhancement of
+              learning and teaching methods. Its significance lies in
+              recognizing excellence by transitioning from traditional
+              paper-based methods to streamlined digital processes. By doing so,
+              it efficiently transforms the evaluation and improvement of
+              learning and teaching practices, ensuring a more effective and
+              progressive educational experience for Monash University
+              academics.
             </span>
           </div>
         </div>
@@ -50,6 +55,26 @@ const Peerview = () => {
         </div>
 
         <div className={c.projectContent}>
+          <div className={c.numberContainer}>
+            <span>Peerview has successfully</span>
+            <div className={c.projectHighlight}>
+              <div>
+                <span className={c.subLabel}>GENERATED</span>
+                <span className={c.number}>3500+</span>
+                <span>Review Reports</span>
+              </div>
+              <div>
+                <span className={c.subLabel}> UTILISED BY</span>
+                <span className={c.number}>2000+</span>
+                <span>Academics</span>
+              </div>
+              <div>
+                <span className={c.subLabel}>USED BY</span>
+                <span className={c.number}>10</span>
+                <span>Faculties</span>
+              </div>
+            </div>
+          </div>
           <div className={c.section}>
             <div className={c.title}>THE PROBLEM</div>
 

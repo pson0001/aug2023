@@ -29,17 +29,26 @@ const StudentApps = () => {
             <span className={c.subTitle}>
               User research, UX/UI Design, Frontend Development, User Testing
             </span>
+
+            <span className={c.subLabel}>TEAM</span>
+            <span className={c.subTitle}>
+              5 designers, 6 developers, 1 project owner, 1 business analyst
+            </span>
           </div>
           <div className={c.projectIntro}>
             <span className={c.subLabel}>OVERVIEW</span>
             <span className={c.subTitle}>
-              As part of Monash University's "digital transformation," the
-              student portal uplift has been a significant focus for our team.
-              Our mission is to create a world-class digital experience that
-              exceeds student expectations, providing seamless and intuitive
-              interactions. By innovating and pushing boundaries, we aim to set
-              a new standard of excellence, ensuring students' journey through
-              the portal is exceptional.
+              Within the framework of Monash University's "digital
+              transformation," our team has prioritized the enhancement of the
+              student portal. Our mission revolves around crafting a{' '}
+              <strong>cutting-edge digital experience</strong> that not only
+              meets but exceeds student expectations. We are dedicated to
+              delivering interactions that are seamless and intuitive, aiming to
+              create a world-class portal. Through innovation and pushing
+              boundaries, our goal is to establish a{' '}
+              <strong>new standard of excellence</strong>, ensuring that
+              students' journeys through the portal are nothing short of
+              exceptional.
             </span>
           </div>
         </div>
@@ -124,18 +133,20 @@ const StudentApps = () => {
               </div>
               <div className={c.description}>
                 We have initiated the recruitment of students for a pilot
-                testing program. The pilot program successfully onboarded 4000
-                students who actively participated in discovering bugs and
-                providing valuable feedback. Their engagement has been
-                instrumental in enhancing the portal's user experience and
-                shaping its successful implementation.
+                testing program. The pilot program successfully onboarded{' '}
+                <strong>4000</strong> students who actively participated in
+                discovering bugs and providing valuable feedback. Their
+                engagement has been instrumental in enhancing the portal's user
+                experience and shaping its successful implementation.
               </div>
               <div className={c.description}>
-                This project has been a labor of love, with tremendous effort
-                dedicated to its success. The overwhelmingly positive feedback
-                from students has been a testament to our hard work. We eagerly
-                anticipate launching the portal in the second half of 2023,
-                providing students with an outstanding digital experience.
+                This project has truly been a labor of love, with an immense
+                amount of effort poured into its success. The overwhelmingly
+                positive feedback, constituting 92.3% approval from students,
+                stands as a testament to our dedication and hard work. We are
+                eagerly anticipating the portal's launch in early 2024, poised
+                to provide students with an outstanding digital experience that
+                reflects our commitment to excellence.
               </div>
 
               <div className={c.description}>

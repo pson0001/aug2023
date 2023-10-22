@@ -32,17 +32,25 @@ const CourseMapper = () => {
             <span className={c.subTitle}>
               User research, UX/UI Design, Frontend Development, User Testing
             </span>
+
+            <span className={c.subLabel}>TEAM</span>
+            <span className={c.subTitle}>
+              3 designers, 4 developers, 1 project owner, 1 business analyst
+            </span>
           </div>
           <div className={c.projectIntro}>
             <span className={c.subLabel}>OVERVIEW</span>
             <span className={c.subTitle}>
-              In 2020, we faced numerous challenges, including restrictions on
-              international travel. During these times, students require
-              additional support in choosing their courses and navigating their
-              academic journey. Course Mapper aims to alleviate the burden on
-              the Student Service Desk by providing guidance to students during
-              these uncertain times, helping them select their units and
-              complete their degrees with ease.
+              In 2020, we encountered a myriad of challenges, notably
+              <strong> restrictions on international travel</strong>. These
+              circumstances demanded extra support for students in making
+              informed decisions about their courses and navigating their
+              academic paths. Course Mapper was conceived to{' '}
+              <strong>ease the burden</strong> by offering guidance to students
+              during these uncertain times. Its purpose is to{' '}
+              <strong>assist students</strong> in selecting their units and
+              completing their degrees seamlessly, ensuring a smoother academic
+              journey.
             </span>
           </div>
         </div>

@@ -22,7 +22,7 @@ const Home = () => {
   }, [])
 
   const [ctx, setCtx] = useState(null)
-  const [setCanvasWidth] = useState(null)
+  const [canvasWidth, setCanvasWidth] = useState(null)
   const establishContext = (context) => {
     setCtx(context)
   }
@@ -137,8 +137,6 @@ const Home = () => {
   ]
 
   const drawPink = () => {
-    console.log(clickCounter)
-
     if (textRef.current && arrowRef.current) {
       arrowRef.current.style.transform = `scaleX(-1)`
       arrowRef.current.style.left = `140px`
@@ -282,8 +280,8 @@ const Home = () => {
       </div>
       <Footer
         right={{
-          to: '/monash-student-portal',
-          name: 'VIEW PROJECT - STUDENT PORTAL',
+          to: '/ping-me',
+          name: 'PING ME',
         }}
       />
     </div>
